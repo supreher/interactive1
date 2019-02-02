@@ -1,0 +1,13 @@
+
+  /* reset styles */
+  
+  * {
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  /* begin styles */
+  
+  body {
+       background-color: rgb(174, 127, 255);
+  }
