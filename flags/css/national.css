@@ -1,0 +1,56 @@
+
+/* reset styles */
+* {
+    margin: 0px; padding: 0px;
+}
+
+/* make the background of the page black */
+body {
+    background: black;
+}
+
+/* flag canvas */
+#canvas {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background: rgb(181, 112, 245);
+}
+
+/* shapes */
+
+#rectangle-1 {
+    width: 464px;
+    height: 29px;
+    background: rgb(109, 18, 206);
+    position: absolute;
+ top: 191px;
+ left: 0px;
+  }
+
+  #rectangle-2 {
+    width: 29px;
+    height: 257px;
+    background: rgb(109, 18, 206);
+    position: absolute;
+ top: 0px;
+ left: 390px;
+}
+
+#rectangle-3 {
+    width: 72px;
+    height: 29px;
+    background: rgb(109, 18, 206);
+    position: absolute;
+ top: 239px;
+ left: 390px;
+}
+
+#rectangle-4 {
+    width: 26px;
+    height: 77px;
+    background: rgb(109, 18, 206);
+    position: absolute;
+ top: 191px;
+ left: 438px;
+}
