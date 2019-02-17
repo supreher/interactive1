@@ -24,7 +24,7 @@ body {
     height: 29px;
     background: rgb(109, 18, 206);
     position: absolute;
- top: 191px;
+ top: 189px;
  left: 0px;
   }
 
@@ -42,13 +42,13 @@ body {
     height: 29px;
     background: rgb(109, 18, 206);
     position: absolute;
- top: 239px;
+ top: 237px;
  left: 390px;
 }
 
 #rectangle-4 {
     width: 26px;
-    height: 77px;
+    height: 75px;
     background: rgb(109, 18, 206);
     position: absolute;
  top: 191px;
