@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background: black;
+    background: white;
 }
 #desktop {
     display: inline;
@@ -19,7 +19,7 @@ body {
 /* tablet */
 @media (min-width: 670px) and (max-width: 1024px) {
     body {
-        background: grey;
+        background: white;
     }
     #tablet {
         display: inline;
@@ -38,7 +38,7 @@ body {
     }
     #mobile {
         display: inline;
-        color: black;
+        color: rgb(255, 255, 255);
     }
     #desktop,
     #tablet,
