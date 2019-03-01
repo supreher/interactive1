@@ -24,3 +24,15 @@ a:hover {
   margin: auto;
   width: 50%;
 }
+
+img {
+  width: 25vw;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
