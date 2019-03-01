@@ -19,3 +19,8 @@ a:visited {
 a:hover {
   color: rgb(236, 117, 201);
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+}
