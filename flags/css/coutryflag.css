@@ -1,58 +1,60 @@
-
 /* reset styles */
 * {
-    margin: 0px; padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* make the background of the page black */
 body {
-    background: black;
+  background: black;
 }
 
 /* flag canvas */
 #canvas {
-    width: 500px;
-    height: 300px;
-    position: relative;
-    background: rgb(222, 41, 16);
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background: rgb(222, 41, 16);
 }
 
 #star-five {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: rgb(39, 35, 167);
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid rgb(41, 41, 152);
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-  }
-  #star-five:before {
-    border-bottom: 80px solid rgb(50, 34, 176);
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-  }
-  #star-five:after {
-    position: absolute;
-    display: block;
-    color: rgb(60, 82, 193);
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid rgb(41, 59, 253);
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-  }
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: rgb(231, 219, 42);
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(231, 219, 42);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+#star-five:before {
+  border-bottom: 80px solid rgb(231, 219, 42);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: rgb(231, 219, 42);
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(231, 219, 42);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}

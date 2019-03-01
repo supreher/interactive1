@@ -1,13 +1,21 @@
+/* reset styles */
 
-  /* reset styles */
-  
-  * {
-    margin: 3px;
-    padding: 3px;
-  }
-  
-  /* begin styles */
-  
-  body {
-       background-color: rgb(174, 127, 255);
-  }
+* {
+  margin: 3px;
+  padding: 3px;
+}
+
+/* begin styles */
+
+body {
+  background-color: rgb(174, 127, 255);
+}
+
+a,
+a:visited {
+  color: rgb(161, 20, 236);
+}
+
+a:hover {
+  color: rgb(223, 99, 186);
+}
