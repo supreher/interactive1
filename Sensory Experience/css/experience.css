@@ -2,42 +2,93 @@
 
     border-width: 1px;
     display: block;
-    width: 2000px;
-    height: 2000px;
+    width: 400px;
+    height: 400px;
     background-color: rgb(230, 88, 88);
     -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
+    position: relative;
     top: 189px;
-    left: 0px;
+    left: 530px;
 }
 
 .box:hover {
     background-color: rgb(174, 10, 10);
-    width: 3000px;
-    height: 3000px;
+    width: 600px;
+    height: 600px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.box-2 {
+.circle {
 
     border-width: 1px;
     display: block;
-    width: 2000px;
-    height: 2000px;
-    background-color: rgb(12, 3, 3);
+    width: 176px;
+    height: 197px;
+    background-color: rgb(235, 224, 143);
     -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
-    top: 189px;
-    left: 0px;
+    position: relative;
+    top: -119px;
+    left: 648px;
     border-radius: 50%
 }
 
-.box-2:hover {
-    background-color: rgb(41, 26, 26);
-    width: 3000px;
-    height: 3000px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+.circle:hover {
+    background-color: rgb(208, 157, 109);
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     border-radius: 50%
+}
+
+body {
+    animation: colorchange 1s;
+    -webkit-animation: colorchange 2s;
+}
+
+@keyframes colorchange {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: yellow;
+    }
+
+    50% {
+        background: blue;
+    }
+
+    75% {
+        background: green;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: yellow;
+    }
+
+    50% {
+        background: blue;
+    }
+
+    75% {
+        background: green;
+    }
+
+    100% {
+        background: red;
+    }
 }
