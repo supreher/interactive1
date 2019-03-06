@@ -1,13 +1,43 @@
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-transition: width 2s, height 4s;
-    /* For Safari 3.1 to 6.0 */
-    transition: width 2s, height 4s;
+.box {
+
+    border-width: 1px;
+    display: block;
+    width: 2000px;
+    height: 2000px;
+    background-color: rgb(230, 88, 88);
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    top: 189px;
+    left: 0px;
 }
 
-div:hover~div {
-    width: 300px;
-    height: 300px;
+.box:hover {
+    background-color: rgb(174, 10, 10);
+    width: 3000px;
+    height: 3000px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.box-2 {
+
+    border-width: 1px;
+    display: block;
+    width: 2000px;
+    height: 2000px;
+    background-color: rgb(12, 3, 3);
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    top: 189px;
+    left: 0px;
+    border-radius: 50%
+}
+
+.box-2:hover {
+    background-color: rgb(41, 26, 26);
+    width: 3000px;
+    height: 3000px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border-radius: 50%
 }
