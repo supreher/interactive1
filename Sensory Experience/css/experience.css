@@ -32,7 +32,8 @@
     position: relative;
     top: -119px;
     left: 648px;
-    border-radius: 50%
+    border-radius: 50%;
+
 }
 
 .circle:hover {
@@ -44,6 +45,14 @@
     border-radius: 50%
 }
 
+.circle:hover~.box {
+    background-color: rgb(174, 10, 10);
+    width: 600px;
+    height: 600px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 body {
     animation: colorchange 1s linear infinite;
     -webkit-animation: colorchange 2s linear infinite;
@@ -51,44 +60,44 @@ body {
 
 @keyframes colorchange {
     0% {
-        background: red;
+        background: rgb(216, 49, 49);
     }
 
     25% {
-        background: yellow;
+        background: rgb(245, 209, 6);
     }
 
     50% {
-        background: blue;
+        background: rgb(39, 39, 238);
     }
 
     75% {
-        background: green;
+        background: rgb(23, 117, 23);
     }
 
     100% {
-        background: red;
+        background: rgb(86, 16, 16);
     }
 }
 
 @-webkit-keyframes colorchange {
     0% {
-        background: red;
+        background: rgb(214, 70, 70);
     }
 
     25% {
-        background: yellow;
+        background: rgb(218, 218, 79);
     }
 
     50% {
-        background: blue;
+        background: rgb(86, 86, 214);
     }
 
     75% {
-        background: green;
+        background: rgb(68, 218, 68);
     }
 
     100% {
-        background: red;
+        background: rgb(213, 68, 68);
     }
 }
