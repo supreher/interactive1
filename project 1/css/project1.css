@@ -1,0 +1,329 @@
+@font-face {
+    font-family: ALGER;
+    src: url(../Fonts/ALGER.TTF)
+}
+
+@font-face {
+    font-family: BKANT;
+    src: url(../Fonts/BKANT.TTF)
+}
+
+@font-face {
+    font-family: CHILLER;
+    src: url(../Fonts/CHILLER.TTF)
+}
+
+@font-face {
+    font-family: MinionVariableConcept-Roman;
+    src: url(../Fonts/MinionVariableConcept-Roman.otf)
+}
+
+@font-face {
+    font-family: monbaiti;
+    src: url(../Fonts/monbaiti.ttf)
+}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../Fonts/MyriadPro-Regular.otf)
+}
+
+@font-face {
+    font-family: SourceSansVariable-Roman;
+    src: url(../Fonts/SourceSansVariable-Roman.otf)
+}
+
+@font-face {
+    font-family: SourceSerifVariable-Roman;
+    src: url(../Fonts/SourceSerifVariable-Roman.otf)
+}
+
+.box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.head a {
+    display: block;
+}
+
+a:hover {
+    color: red;
+    background-color: #ab0aee;
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.head {
+    background-color: #C773EA;
+    height: 80px;
+
+}
+
+.head ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head li {
+    float: left;
+    font-family: CHILLER;
+    font-size: 36px;
+    line-height: 80px;
+    color: white;
+    margin-left: 56px;
+}
+
+#zone {
+    margin-left: 30px;
+}
+
+#home {
+    margin-left: 200px;
+}
+
+.supreher {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    height: 510px;
+}
+
+.myzone {
+    height: 330px;
+    width: 120px;
+    background-color: #E4D5EF;
+    font-family: ALGER;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+.myzone p {
+    margin-top: 40px;
+    margin-left: 22px;
+}
+
+.supre {
+    font-family: ALGER;
+    position: absolute;
+    top: 0;
+    left: 191px;
+    font-size: 30px;
+}
+
+.say {
+    width: 810px;
+    height: 450px;
+    background-color: #E4D5EF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#input {
+    width: 673px;
+    margin-left: 50px;
+    margin-top: 37px;
+    font-size: 18px;
+    padding-bottom: 55px;
+}
+
+.peter {
+    width: 673px;
+    border: 1px solid #d8d2d2;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 45px;
+    position: relative;
+}
+
+.pet {
+    color: gray;
+    font-size: 23px;
+    position: absolute;
+    top: 8px;
+    left: 78px;
+}
+
+.check {
+    font-size: 23px;
+    position: absolute;
+    top: 46px;
+    left: 79px;
+}
+
+.history {
+    width: 1000px;
+    margin: 0 auto;
+    height: 810px;
+    margin-top: 180px;
+    position: relative;
+
+}
+
+.his {
+    color: #C773EA;
+    font-family: CHILLER;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.img {
+    border-left: 1px solid #C773EA;
+    padding-left: 10px;
+    height: 330px;
+    width: 550px;
+    margin-left: 15px;
+}
+
+.img3 {
+    width: 549px;
+    position: absolute;
+    bottom: 0;
+    height: 172px;
+    left: 80px;
+}
+
+.farm {
+    font-family: CHILLER;
+    font-size: 50px;
+    color: #9459C6;
+    width: 140px;
+    height: 50px;
+    border: 2px solid #9459C6;
+    margin-left: 440px;
+    margin-top: 15px;
+}
+
+.img4 {
+    border-left: 1px solid #C773EA;
+    padding-left: 10px;
+    height: 260px;
+    width: 350px;
+    margin-left: 15px;
+    position: absolute;
+    right: 0;
+    top: 345px;
+}
+
+.ranch {
+    font-family: CHILLER;
+    font-size: 50px;
+    color: #9459C6;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #9459C6;
+    margin-left: 840px;
+    margin-top: -114px;
+}
+
+.park {
+    width: 1000px;
+    padding-top: 50px;
+    margin: 0 auto;
+    height: 950px;
+    position: relative;
+
+
+}
+
+.img5 {
+    border-left: 1px solid #C773EA;
+    padding-left: 10px;
+    height: 380px;
+    width: 550px;
+    margin-left: 15px;
+}
+
+.parki {
+    font-family: CHILLER;
+    font-size: 50px;
+    color: #9459C6;
+    width: 170px;
+    height: 50px;
+    border: 2px solid #9459C6;
+    margin-left: 410px;
+    margin-top: 15px;
+}
+
+.img9 {
+    border-left: 1px solid #C773EA;
+    padding-left: 10px;
+    height: 560px;
+    width: 350px;
+    margin-left: 15px;
+    position: absolute;
+    right: 0;
+    top: 345px;
+}
+
+.qpet {
+    font-family: CHILLER;
+    font-size: 50px;
+    color: #9459C6;
+    width: 122px;
+    height: 50px;
+    border: 2px solid #9459C6;
+    margin-left: 866px;
+    margin-top: 7px;
+
+}
+
+.qqzone {
+    width: 1000px;
+    padding-top: 80px;
+    margin: 0 auto;
+    height: 1000px;
+    position: relative;
+}
+
+.img10 {
+    padding-left: 10px;
+    height: 350px;
+    width: 700px;
+    margin-left: 15px;
+}
+
+.when {
+    width: 385px;
+    margin-left: 621px;
+    margin-top: 120px;
+    color: #C773EA;
+}
+
+.join {
+    text-align: center;
+    font-size: 100px;
+}
+
+.us {
+    color: #9320ED;
+    background-color: #C49AE5;
+    width: 647px;
+    display: block;
+    height: 92px;
+    font-size: 60px;
+    margin-left: 237px;
+    padding-left: 65px;
+    margin-top: 60px;
+    margin-bottom: 400px;
+}
