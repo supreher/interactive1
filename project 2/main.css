@@ -1,0 +1,272 @@
+body {
+	color: green
+}
+
+p {
+	font-size: 34px
+}
+
+@keyframes snakeMove {
+	0% {
+		opacity: 1;
+		transform: translateX(90px)
+	}
+
+	99.9% {
+		transform: translateX(0.1px);
+		opacity: 1
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 0
+	}
+
+}
+
+@-webkit-keyframes snakeMove {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateX(90px)
+	}
+
+	99.9% {
+		-webkit-transform: translateX(0.1px);
+		opacity: 1
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		opacity: 0
+	}
+
+}
+
+.letter {
+	margin: 100px;
+	display: inline-grid;
+	grid-template-columns: 30px 30px 30px;
+	grid-template-rows: 30px 30px 30px;
+	grid-gap: 0px 0px;
+}
+
+.letter div {
+	opacity: 0;
+}
+
+.letter div.red {
+	opacity: 1;
+	position: relative;
+	background: red;
+}
+
+.letter div.red.empty {
+	opacity: 1;
+	position: relative;
+	background: red;
+}
+
+
+
+.letter div.red::after {
+	content: "";
+	display: block;
+	opacity: 0;
+	height: 100%;
+	width: 60px;
+	background: green;
+	position: absolute;
+	transform: translateX(90px);
+	-webkit-transform: translateX(90px);
+}
+
+.letter.letter-2 div.red::after {
+	width: 90px;
+}
+
+.letter div.red:hover::after {
+	animation: snakeMove 2s linear forwards;
+	-webkit-animation: snakeMove 2s linear forwards;
+}
+
+.letter div.red:hover~div {
+	transition-delay: 2s;
+	-webkit-transition-delay: 2s;
+	opacity: 1;
+}
+
+.letter div.red:hover:not(.empty) {
+	background: green;
+	transition-delay: 2s;
+	-webkit-transition-delay: 2s;
+}
+
+.letter div.red:hover.empty {
+	background: transparent;
+	transition-delay: 2s;
+	-webkit-transition-delay: 2s;
+}
+
+.letter-2 {
+	display: inline-grid;
+	/* display: grid;
+	float: left; */
+	grid-template-columns: 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px;
+	grid-gap: 0px 0px;
+}
+
+.letter-2 div {
+
+	background: green;
+}
+
+.letter-2 div.empty {
+	background: transparent;
+}
+
+
+.word .letter-2 {
+	margin: 35px;
+
+}
+
+/* letter pieces */
+
+.letter div {
+
+	background: green;
+}
+
+.letter div.empty {
+	background: transparent;
+}
+
+#red {
+
+	background: rgb(248, 37, 0);
+}
+
+#container1 {
+	display: block;
+	text-align: center;
+}
+
+#Snake {
+	display: inline-block;
+	margin: 300px auto;
+	white-space: nowrap;
+}
+
+
+
+
+#container2 {
+	width: 400px;
+	height: 300px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.block {
+	position: absolute;
+	top: 245px;
+	left: 104px;
+	width: 30px;
+	height: 30px;
+	background: black;
+	margin: 195px auto;
+}
+
+.snake {
+	width: 60px;
+	height: 30px;
+	left: 120px;
+	top: 0;
+	background: black;
+	position: absolute;
+	transition: 2s transform linear;
+	opacity: 0;
+
+}
+
+.result {
+	top: -30px;
+	left: 0;
+	width: 90px;
+	height: 0px;
+	position: absolute;
+	/* transition-delay: 2s; */
+	overflow: hidden;
+}
+
+.result div {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.show {
+	background: black;
+}
+
+.row {
+	width: 300px;
+	height: 30px;
+	position: absolute;
+}
+
+.row div {
+	width: 30px;
+	height: 30px;
+	background: black;
+	position: absolute;
+}
+
+.row div:nth-child(1) {
+	left: 30px;
+}
+
+.row div:nth-child(2) {
+	left: 90px;
+}
+
+.row div:nth-child(3) {
+	left: 150px;
+}
+
+.row div:nth-child(4) {
+	left: 210px;
+}
+
+.row div:nth-child(5) {
+	left: 270px;
+}
+
+.block:hover .snake {
+	transform: translateX(-90px);
+	opacity: 1;
+}
+
+.block:hover .result {
+	transition-delay: 2s;
+	height: 90px;
+}
+
+#green {
+	background: green
+}
+
+
+.introduction {
+	position: sticky;
+	top: 550px;
+	color: green;
+	margin: 35px;
+}
+
+p {
+	text-align: left;
+	margin-top: 150px;
+	font-family: 'VT323', monospace;
+}

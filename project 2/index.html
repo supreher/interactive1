@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Snake</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<style>
+	body {
+
+		background-color: #000000;
+
+	}
+</style>
+
+<body>
+
+
+	<!-- Word Snake -->
+	<div id="container1">
+		<div class="word" id="Snake">
+			<!-- letter S -->
+			<div class="letter-2" id="S">
+				<!-- row 1 -->
+				<div class="empty"></div>
+				<div></div>
+				<div></div>
+
+				<!-- row 2 -->
+				<div class="empty"></div>
+				<div></div>
+				<div class="empty"></div>
+
+				<!-- row 3 -->
+				<div id="red"> </div>
+				<div></div>
+				<div class="empty"></div>
+
+			</div>
+			<!-- letter N -->
+			<div class="letter-2" id="N">
+				<!-- row 1 -->
+				<div id="red"> </div>
+				<div></div>
+				<div></div>
+
+				<!-- row 2 -->
+				<div></div>
+				<div class="empty"></div>
+				<div></div>
+
+				<!-- row 3 -->
+				<div> </div>
+				<div class="empty"></div>
+				<div></div>
+
+
+
+			</div>
+
+
+
+
+
+			<!-- letter A -->
+			<div class="letter-2" id="A">
+				<!-- row 1 -->
+				<div class="empty"></div>
+				<div id="red"></div>
+				<div class="empty"></div>
+
+				<!-- row 2 -->
+				<div></div>
+				<div></div>
+				<div></div>
+
+				<!-- row 3 -->
+				<div></div>
+				<div class="empty"></div>
+				<div></div>
+
+
+
+			</div>
+
+			<!-- letter K -->
+			<div class="letter-2" id="K">
+				<!-- row 1 -->
+				<div></div>
+				<div class="empty"></div>
+				<div id="red"></div>
+
+				<!-- row 2 -->
+				<div></div>
+				<div></div>
+				<div class="empty"></div>
+
+				<!-- row 3 -->
+				<div> </div>
+				<div class="empty"></div>
+				<div></div>
+
+
+
+			</div>
+
+
+			<!-- letter E -->
+			<div class="letter-2" id="E">
+				<!-- row 1 -->
+				<div></div>
+				<div></div>
+				<div id="red"></div>
+
+				<!-- row 2 -->
+				<div></div>
+				<div></div>
+				<div class="empty"></div>
+
+				<!-- row 3 -->
+				<div> </div>
+				<div></div>
+				<div></div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+	<div class="introduction">
+
+		<p>The font I designed was called snake, and I got the idea from the game snake.<br>
+			People are more focused on designing regular fonts than pixel fonts nowadays.<br>
+			I hope that my font can arouse people's love for pixel fonts and old games.<br>
+			Also I use three-by-three pixels as my grid, which makes them more of a system and more minimalist.
+		</p>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+	<!-- letter A -->
+	<div class="letter" id="A">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter B -->
+	<div class="letter" id="B">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter C -->
+	<div class="letter" id="C">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter D -->
+	<div class="letter" id="D">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+
+	<!-- letter E -->
+	<div class="letter" id="E">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter F -->
+	<div class="letter" id="F">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter G -->
+	<div class="letter" id="G">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter H -->
+	<div class="letter" id="H">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+
+
+	<!-- letter I -->
+	<div class="letter" id="H">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter J -->
+	<div class="letter" id="J">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter K -->
+	<div class="letter" id="K">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter L -->
+	<div class="letter" id="L">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter M -->
+	<div class="letter" id="M">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter N -->
+	<div class="letter" id="N">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter O -->
+	<div class="letter" id="O">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+	</div>
+
+
+	<!-- letter P -->
+	<div class="letter" id="P">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter Q -->
+	<div class="letter" id="Q">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter R -->
+	<div class="letter" id="R">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+	<!-- letter S -->
+	<div class="letter" id="S">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+	<!-- letter T -->
+	<div class="letter" id="T">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+	<!-- letter U -->
+	<div class="letter" id="U">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter V -->
+	<div class="letter" id="V">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+
+	<!-- letter W -->
+	<div class="letter" id="W">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+
+	</div>
+
+
+	<!-- letter X -->
+	<div class="letter" id="X">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+
+	<!-- letter Y -->
+	<div class="letter" id="Y">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+
+
+	<!-- letter Z -->
+	<div class="letter" id="Z">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 0 -->
+	<div class="letter" id="0">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 1 -->
+	<div class="letter" id="1">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 2 -->
+	<div class="letter" id="2">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 3 -->
+	<div class="letter" id="3">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 4 -->
+	<div class="letter" id="4">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 5 -->
+	<div class="letter" id="5">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter 6 -->
+	<div class="letter" id="6">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter 7 -->
+	<div class="letter" id="7">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 8 -->
+	<div class="letter" id="8">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div> </div>
+		<div></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter 9 -->
+	<div class="letter" id="9">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+	<!-- letter dian -->
+	<div class="letter" id="dian">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter ? -->
+	<div class="letter" id="?">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div class="empty"></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter ! -->
+	<div class="letter" id="!">
+		<!-- row 1 -->
+		<div class="red"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div></div>
+		<div class="empty"></div>
+
+
+
+	</div>
+
+	<!-- letter douhao -->
+	<div class="letter" id="douhao">
+		<!-- row 1 -->
+		<div class="empty red"></div>
+		<div class="empty"></div>
+		<div class="empty"></div>
+
+		<!-- row 2 -->
+		<div class="empty"></div>
+		<div></div>
+		<div></div>
+
+		<!-- row 3 -->
+		<div class="empty"> </div>
+		<div class="empty"></div>
+		<div></div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
