@@ -85,26 +85,26 @@ p {
 }
 
 .letter div.red:hover::after {
-	animation: snakeMove 2s linear forwards;
-	-webkit-animation: snakeMove 2s linear forwards;
+	animation: snakeMove 1.5s linear forwards;
+	-webkit-animation: snakeMove 1.5s linear forwards;
 }
 
 .letter div.red:hover~div {
-	transition-delay: 2s;
-	-webkit-transition-delay: 2s;
+	transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
 	opacity: 1;
 }
 
 .letter div.red:hover:not(.empty) {
 	background: green;
-	transition-delay: 2s;
-	-webkit-transition-delay: 2s;
+	transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
 }
 
 .letter div.red:hover.empty {
 	background: transparent;
-	transition-delay: 2s;
-	-webkit-transition-delay: 2s;
+	transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
 }
 
 .letter-2 {
